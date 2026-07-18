@@ -20,22 +20,28 @@ Tania-Portfolio/
 ├── assets/
 │   ├── css/style.css          # theme + layout (edit --color-primary to change accent)
 │   ├── js/main.js             # menu, tabs, scroll-spy, animations
-│   ├── images/                # favicon.svg + (add) avatar.jpg
+│   ├── images/
+│   │   ├── avatar.png         # hero photo
+│   │   ├── favicon.svg
+│   │   └── logos/             # experience & education card logos
 │   └── Tania-St-Vil-Resume.pdf
 └── README.md
 ```
 
+## Sections
+
+Home · About · Experience · Education · Skills · Projects · Blog · Interests & Hobbies · Contact
+
 ## What to fill in (search the code for `TODO`)
 
-- [ ] **Photo** — add `assets/images/avatar.jpg`, then in `index.html` replace the
-      `.photo-placeholder` block in the Hero with `<img src="assets/images/avatar.jpg" alt="Tania St Vil" />`.
-- [ ] **Project links** — replace the `href="#"` placeholders (Live Demo / GitHub / Visit).
-- [ ] **GitHub username** — footer link currently points to `github.com/thany-8`; confirm/replace.
-- [ ] **Company/school logos** — optional: drop image files in `assets/images/` and swap the
-      text monograms (`FR`, `CP`, `CS`, `CM`, `SF`) in the experience/education cards for
-      `<img src="assets/images/flyrank.png" alt="FlyRank.ai" />`.
+- [ ] **Project links** — replace the `href="#"` placeholders (Live Demo / GitHub / Visit) in the Projects section.
+- [ ] **Blog posts** — the three cards are placeholders (`Your … post title`, `Month DD, YYYY`, `Category`). Edit each `<article class="blog-card">`, and optionally add a cover image inside the thumbnail link.
+- [ ] **Interests & Hobbies** — replace the six placeholder cards (`Hobby one` … `Hobby six`) with your real interests, icons, and text.
+- [ ] **GitHub username** — footer link points to `github.com/thany-8`; confirm/replace.
 - [ ] **Skill percentages** — the numbers in the Skills tab are placeholders; adjust to taste.
-- [ ] **Experience locations** — "Remote" is a placeholder for FlyRank/CodePath/ColorStack.
+- [ ] **Experience locations** — "Remote" is a placeholder for FlyRank / CodePath / ColorStack.
+
+Done: ✅ light neumorphic theme · ✅ hero photo (`avatar.png`) · ✅ experience & education logos.
 
 ## Change the accent color
 
