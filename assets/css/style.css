@@ -488,6 +488,71 @@ ul { list-style: none; }
 .project-card__links a:hover { color: var(--color-primary); }
 .project-card__links svg { width: 16px; height: 16px; }
 
+/* ---------------- 09b. Blog ---------------- */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.blog-card {
+  background: var(--bg-gradient);
+  border-radius: 16px;
+  box-shadow: var(--shadow-1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+}
+.blog-card:hover { transform: translateY(-6px); }
+
+.blog-card__thumb {
+  aspect-ratio: 16 / 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-card);
+  box-shadow: var(--shadow-2);
+  color: var(--color-primary);
+  overflow: hidden;
+}
+.blog-card__thumb img { width: 100%; height: 100%; object-fit: cover; }
+.blog-card__thumb svg { width: 46px; height: 46px; opacity: 0.7; }
+
+.blog-card__body {
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.blog-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-family: var(--font-secondary);
+  font-size: 1.3rem;
+  color: var(--color-primary);
+  margin-bottom: 14px;
+}
+.blog-card__meta span { display: inline-flex; align-items: center; gap: 6px; }
+.blog-card__meta svg { width: 15px; height: 15px; }
+
+.blog-card__title { font-size: 1.9rem; line-height: 1.4; margin-bottom: 12px; }
+.blog-card__desc { font-size: 1.5rem; color: var(--color-body); margin-bottom: 22px; flex-grow: 1; }
+
+.blog-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-secondary);
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--color-light);
+  align-self: flex-start;
+  transition: var(--transition);
+}
+.blog-card__link:hover { color: var(--color-primary); gap: 12px; }
+.blog-card__link svg { width: 16px; height: 16px; }
+
 /* ---------------- 10. Contact / Footer ---------------- */
 .contact__grid {
   display: grid;
@@ -564,6 +629,7 @@ ul { list-style: none; }
   .hero__photo { order: -1; max-width: 420px; margin: 0 auto; }
   .skills-grid { grid-template-columns: 1fr; gap: 40px; }
   .projects-grid { grid-template-columns: 1fr 1fr; }
+  .blog-grid { grid-template-columns: 1fr 1fr; }
   .contact__grid { grid-template-columns: 1fr; }
   .section-title .title { font-size: 3rem; }
 }
@@ -591,6 +657,7 @@ ul { list-style: none; }
   .exp-card { flex-direction: column; align-items: flex-start; }
   .exp-card__right { align-self: flex-start; }
   .projects-grid { grid-template-columns: 1fr; }
+  .blog-grid { grid-template-columns: 1fr; }
   .info-item__head { flex-direction: column; gap: 4px; }
   .footer__inner { flex-direction: column; text-align: center; }
 }
