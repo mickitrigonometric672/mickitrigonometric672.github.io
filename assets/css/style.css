@@ -563,6 +563,37 @@ ul { list-style: none; }
 .blog-card__link:hover { color: var(--color-primary); gap: 12px; }
 .blog-card__link svg { width: 16px; height: 16px; }
 
+/* ---------------- 09c. Interests / Hobbies ---------------- */
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.interest-card {
+  background: var(--bg-gradient);
+  border-radius: 16px;
+  padding: 34px 30px;
+  box-shadow: var(--shadow-1);
+  text-align: center;
+  transition: var(--transition);
+}
+.interest-card:hover { transform: translateY(-6px); }
+.interest-card__icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-card);
+  box-shadow: var(--shadow-btn);
+  color: var(--color-primary);
+}
+.interest-card__icon svg { width: 30px; height: 30px; }
+.interest-card__title { font-size: 1.9rem; margin-bottom: 10px; }
+.interest-card__desc { font-size: 1.5rem; color: var(--color-body); line-height: 1.7; }
+
 /* ---------------- 10. Contact / Footer ---------------- */
 .contact__grid {
   display: grid;
@@ -640,6 +671,7 @@ ul { list-style: none; }
   .skills-grid { grid-template-columns: 1fr; gap: 40px; }
   .projects-grid { grid-template-columns: 1fr 1fr; }
   .blog-grid { grid-template-columns: 1fr 1fr; }
+  .interests-grid { grid-template-columns: 1fr 1fr; }
   .contact__grid { grid-template-columns: 1fr; }
   .section-title .title { font-size: 3rem; }
 }
@@ -668,6 +700,7 @@ ul { list-style: none; }
   .exp-card__right { align-self: flex-start; }
   .projects-grid { grid-template-columns: 1fr; }
   .blog-grid { grid-template-columns: 1fr; }
+  .interests-grid { grid-template-columns: 1fr; }
   .info-item__head { flex-direction: column; gap: 4px; }
   .footer__inner { flex-direction: column; text-align: center; }
 }
